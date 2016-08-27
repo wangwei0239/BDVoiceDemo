@@ -30,12 +30,6 @@ public class MainActivity extends AppCompatActivity implements SpeechSynthesizer
         mSpeechSynthesizer.setApiKey("pemXE0xE2dl4icmdYHGfd0ew", "c9bd64831474fd0736f027dbbcf45d42");
         // 设置离线语音合成授权，需要填入从百度语音官网申请的app_id
         mSpeechSynthesizer.setAppId("8555043");
-        // 设置语音合成文本模型文件
-//        mSpeechSynthesizer.setParam(SpeechSynthesizer.PARAM_TTS_TEXT_MODEL_FILE, "your_txt_file_path");
-        // 设置语音合成声音模型文件
-//        mSpeechSynthesizer.setParam(SpeechSynthesizer.PARAM_TTS_SPEECH_MODEL_FILE, "your_speech_file_path");
-        // 设置语音合成声音授权文件
-//        mSpeechSynthesizer.setParam(SpeechSynthesizer.PARAM_TTS_LICENCE_FILE, "your_licence_path");
         // 获取语音合成授权信息
         AuthInfo authInfo = mSpeechSynthesizer.auth(TtsMode.MIX);
         // 判断授权信息是否正确，如果正确则初始化语音合成器并开始语音合成，如果失败则做错误处理
