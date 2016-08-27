@@ -1,1 +1,1 @@
-include ':app', ':bdvoicesynthesis'
+include ':bdvoicerecognition', ':bdvoicesynthesis'
